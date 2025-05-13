@@ -14,7 +14,6 @@ $(document).ready(function(){
             <div class="check"></div>
             </div>`);
         
-
         // Agregar a la lista pero las siguientes aparacen arriba
         $("#lista_tareas").prepend(nuevaNota);
 
@@ -28,27 +27,10 @@ $(document).ready(function(){
     });
 
     $("#lista_tareas").on("click",".check",function(){
-        $(this,".check").toggleClass("completado");
-        if($(".check").hasClass("completado")){
-
+        $(this).toggleClass("completado");
+        if ($(this).hasClass("completado")) {
+       
+        } else {
         }
     });
-
-
-    $(".modo").click(function(){
-        $("html").toggleClass("cambio");
-        /*if($("html").hasClass("cambio")){
-            $(".oscuro").removeClass("oscuro").addClass("modo_claro");
-            $(".modo").text("Modo claro");        
-        }
-        else{
-            $(".oscuro").toggleClass("oscuro");
-            $(".modo").text("Modo oscuro"); 
-        }*/
-        
-    });
-
-    
-
-
-})
+});
