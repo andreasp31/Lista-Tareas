@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <div id="menu">
@@ -33,17 +34,19 @@
         <div id="fondo">
             <div id="bloque2">
                 <h2>Nueva nota</h2>
-                <p>Título de la nota: </p>
+                <p class="texto">Título de la nota: </p>
                 <input type="text" class="titulo">
-                <input type="text" class="descripcion" placeholder="Descripción de la tarea...">
+                <textarea type="text" class="descripcion" placeholder="Descripción de la tarea..."></textarea>
                 <button class="guardar">Guardar</button>
 
             </div>
             <div id="bloque3">
-                
+                <h2>Tus Tareas</h2>
+                <ul id="lista_tareas">
+                </ul>
             </div>
         </div>
-        
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

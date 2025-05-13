@@ -3,6 +3,11 @@ body{
     margin: 0em;
 }
 
+.cambio{
+    background-color: black;
+    color:white;
+}
+
 #menu{
     display: flex;
     flex-direction: row;
@@ -41,7 +46,7 @@ body{
     display: flex;
     flex-direction: row;
     padding-top: 0.5em;
-    height: 33em;
+    min-height: 33em;
 }
 
 #bloque1{
@@ -63,7 +68,7 @@ body{
     background-color: rgb(245, 244, 244);
     border-top-left-radius: 1em ;
     width: 100em;
-    height: 33em;
+    min-height: 33em;
     padding: 2em;
     display: flex;
     flex-direction: row;
@@ -75,10 +80,23 @@ body{
     flex-direction: row;
     align-items: center;
     padding-top: 6em;
+    cursor: pointer;
 }
+
+
 
 .oscuro{
     background-image: url(../imagenes/nightlight_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    gap:2em;
+}
+
+.modo_claro{
+    background-image: url(../imagenes/wb_sunny_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 1.5em;
@@ -95,7 +113,7 @@ body{
     padding: 2em;
     display: flex;
     flex-direction: column;
-    gap:0.5em;
+    gap:1em;
 }
 
 h2{
@@ -108,16 +126,20 @@ h2{
     background-color: rgb(245, 245, 245);
     border-radius:0.5em;
     height: 3em;
+    padding-left: 1em;
 }
 
 .descripcion{
+    font-family: "Montserrat";
     border: none;
     background-color: rgb(245, 245, 245);
     border-radius:0.5em;
-    height: 15em;
+    height: 25em;
     padding-left: 1em;
-    text-align: start;
-    justify-self: start;
+    padding-right: 1em;
+    vertical-align: top;
+    padding-top: 1.5em;
+    resize: none;
 }
 
 .guardar{
@@ -127,4 +149,74 @@ h2{
     border-radius: 2em;
     width: 6em;
     border: none;
+    cursor: pointer;
+}
+
+.guardar:hover{
+    background-color: rgb(128, 51, 201);
+}
+
+.texto{
+    margin: 0em;
+    padding-top: 1em;
+}
+
+#bloque3{
+    background-color: white;
+    border-radius:1em;
+    width: 45em;
+    min-height: 30em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+#lista_tareas{
+    gap:3em;
+    width: 40em;
+}
+
+.tarea{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 244, 244);
+    color: rgb(54, 54, 54);
+    font-family: "Montserrat";
+    list-style: none;
+    border-radius: 0.5em;
+    padding: 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.check{
+    background-image: url(../imagenes/check_circle_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    gap:2em;
+    align-self: end;
+}
+
+.completado{
+    background-image: url(../imagenes/check_circle_24dp_8C1AF6_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    gap:2em;
+}
+
+.borrar{
+    background-image: url(../imagenes/cancel_24dp_545454_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    gap:2em;
+    align-self: end;
 }
