@@ -166,7 +166,8 @@ h2{
     background-color: white;
     border-radius:1em;
     width: 35em;
-    min-height: 30em;
+    max-height: 30em;
+    overflow-y: auto;
     padding: 2em;
     display: flex;
     flex-direction: column;
